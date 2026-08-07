@@ -1258,15 +1258,18 @@ Complete Directive Flow
 
 
 Angular Forms - Complete Concept
+
 What is an Angular Form?
 
-An Angular Form is a mechanism used to collect, validate, process, and submit user input in an Angular application.
+An Angular Form is a mechanism used to collect, 
+validate, process, and submit user input in an Angular application.
 
 It acts as a bridge between the User Interface (HTML) and the Application Logic (TypeScript).
 
 Simple Definition
 
-An Angular Form is used to collect user information, validate the entered data, and submit it to the server or database.
+An Angular Form is used to collect user information, validate the entered data, 
+and submit it to the server or database.
 
 Types of Angular Forms
 
@@ -1315,6 +1318,12 @@ ERP
 CRM
 Enterprise Applications
 
+
+ng g c login-tdf
+ng g c login-mdf 
+
+
+
 1. login-tdf.component.ts
 import { Component } from '@angular/core';
 
@@ -1354,7 +1363,8 @@ export class LoginTdfComponent {
 
 }
 2. login-tdf.component.html
-<div class="container">
+<
+div class="container">
 
     <h2>Template Driven Form Login</h2>
 
@@ -1409,6 +1419,7 @@ export class LoginTdfComponent {
     </form>
 
 </div>
+
 3. login-tdf.component.css
 body{
 

@@ -1,0 +1,53 @@
+<div class="container">
+
+    <h2>Template Driven Form Login</h2>
+
+    <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm)">
+
+        <label>Email</label>
+
+        <input
+                type="email"
+                name="email"
+                required
+                email
+                [(ngModel)]="login.email"
+                #email="ngModel">
+
+        <small
+                class="error"
+                *ngIf="email.invalid && email.touched">
+
+            Enter Valid Email
+
+        </small>
+
+        <label>Password</label>
+
+        <input
+                type="password"
+                name="password"
+                required
+                minlength="6"
+                [(ngModel)]="login.password"
+                #password="ngModel">
+
+        <small
+                class="error"
+                *ngIf="password.invalid && password.touched">
+
+            Password must contain minimum 6 characters
+
+        </small>
+
+        <button
+                type="submit"
+                [disabled]="loginForm.invalid">
+
+            Login
+
+        </button>
+
+    </form>
+
+</div>
