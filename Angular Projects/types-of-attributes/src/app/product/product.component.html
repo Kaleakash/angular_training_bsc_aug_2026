@@ -1,0 +1,84 @@
+<h1 class="title">
+
+Angular Shopping Store
+
+</h1>
+
+<div class="container">
+
+<div
+class="card" *ngFor="let product of products">
+
+<img
+
+[src]="product.image"
+
+class="image">
+
+<h2>
+
+{{product.name}}
+
+</h2>
+
+<h3
+
+[ngStyle]="{
+
+'color':'green'
+
+}">
+
+₹ {{product.price}}
+
+</h3>
+
+<h4
+
+*ngIf="product.discount>0"
+
+class="discount">
+
+{{product.discount}}% OFF
+
+</h4>
+
+<h4>
+
+⭐ {{product.rating}}
+
+</h4>
+
+<p
+
+[ngClass]="{
+
+'available':product.stock,
+
+'notAvailable':!product.stock
+
+}">
+
+{{product.stock ?
+
+'In Stock'
+
+:
+
+'Out Of Stock'}}
+
+</p>
+
+<button
+
+(click)="addToCart(product)"
+
+[disabled]="!product.stock">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>

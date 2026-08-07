@@ -779,7 +779,8 @@ src
  │     │      ├── product.component.html
  │     │      ├── product.component.css
 
- Real-Time Project: E-Commerce Product Catalog
+
+Real-Time Project: E-Commerce Product Catalog
 Scenario
 
 You are developing an Online Shopping Application.
@@ -855,6 +856,7 @@ export class ProductComponent {
 
 }
 product.component.html
+
 <h1 class="title">
 
 Angular Shopping Store
@@ -941,7 +943,9 @@ Add To Cart
 </div>
 
 </div>
+
 product.component.css
+
 body{
 
 background:#f2f2f2;
@@ -1057,6 +1061,7 @@ background:gray;
 cursor:not-allowed;
 
 }
+
 Output
 ---------------------------------------------------------------
 
