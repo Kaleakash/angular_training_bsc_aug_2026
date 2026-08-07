@@ -267,6 +267,7 @@ Mouse Over
 Mouse Leave
 
 </button>
+
 4. Two-Way Binding
 Definition
 
@@ -499,7 +500,8 @@ Course :
 Angular Directives
 What is a Directive?
 
-A Directive is a special class in Angular that allows you to change the appearance, 
+A Directive is a special class in Angular that allows you to 
+change the appearance, 
 behavior, or structure of HTML elements.
 
 

@@ -1,0 +1,19 @@
+<div>
+    <h3>Structure directive using *ngIf and *ngFor</h3>
+    <p>Welcome to Angular Web Page</p>
+    <p *ngIf="true">Welcome to Angular web page with *ngIf value is true</p>
+    <p *ngIf="false">Welcome to Angular web page with *ngIf value is false</p>
+    <input type="button" [value]="msg" (click)="toggle()">
+    <hr/>
+    <p *ngIf="flag">
+        Welcome to Angular web page with *ngIf value is true and button value is {{msg}}
+    </p>
+    <input type="text" #skillName placeholder="Enter your skill" />
+    <input type="button" value="Add Skill" (click)="addSkill(skillName.value)"/>
+    <h2>All Skill Set</h2>
+    <ul>
+        <li *ngFor="let skill of skillSet">
+            {{skill}}
+        </li>
+    </ul>
+</div>  

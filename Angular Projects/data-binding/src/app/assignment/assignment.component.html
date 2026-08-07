@@ -1,0 +1,54 @@
+<div>
+{{title}}
+<img [src]="studentImage" width="150">
+
+
+
+
+Name
+
+<input type="text" [(ngModel)]="studentName">
+
+
+
+
+Email
+
+<input type="email" [(ngModel)]="email">
+
+
+
+
+Gender
+
+<input type="radio" name="gender" value="Male" [(ngModel)]="gender"> Male
+
+<input type="radio" name="gender" value="Female" [(ngModel)]="gender"> Female
+
+
+
+
+
+Course : {{course}}
+
+<button [disabled]="buttonDisabled" (click)="registerStudent()">
+
+Register
+
+Registration Details
+Student Name : {{studentName}}
+
+
+Email : {{email}}
+
+
+Gender : {{gender}}
+
+
+Course : {{course}}
+
+
+
+
+{{message}}
+
