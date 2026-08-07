@@ -1,1 +1,15 @@
-<p>attribute-directive works!</p>
+<div>
+    <h3>Attribute Directive using ngStyle and ngClass</h3>
+    <p>Welcome to Angular Web Page</p>
+    <p style="color: red;">Apply style using css</p>
+    <p [ngStyle]="styleValue">Apply style using ngStyle</p>
+    <
+    <p class="firstClass">Apply style using normal css</p>
+    <p [ngClass]="'firstClass'">Apply style using ngClass</p>
+
+    <p [ngClass]="{firstClass:true, secondClass:false}">Apply style using ngClass with object</p>
+    <p [ngClass]="{firstClass:false, secondClass:true}">Apply style using ngClass with object</p>
+
+    <p [ngClass]="{firstClass:f1, secondClass:f2}" 
+    (mouseover)="fun1()" (mouseout)="fun2()">Apply style using ngClass with object with Event</p>
+</div>
