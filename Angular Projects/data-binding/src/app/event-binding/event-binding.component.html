@@ -1,0 +1,9 @@
+<div>
+    <h2>Event Binding</h2>
+    {{msg}} - <span [textContent]="msg"></span>
+    <br/>
+    <input type="button" value="Click Here" (click)="fun()"/><br/>
+    <input type="button" value="click here" (click)="passValue('Akash')"/><br/>
+    <input type="text" #nameRef/>
+    <input type="button" value="Click Here" (click)="passDynamicValue(nameRef.value)"/>
+</div>
