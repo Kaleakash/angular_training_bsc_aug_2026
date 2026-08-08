@@ -283,13 +283,29 @@ ID      Name      Salary
 
 103     Neha      60000
 
+Angular pre defined service 
+
 What is HttpClient?
+
 Definition
 
-HttpClient is a built-in Angular service provided by @angular/common/http 
-that is used to communicate with REST APIs or web services over the HTTP protocol.
+HttpClient is a built-in 
+Angular service provided by @angular/common/http 
+that is used to communicate 
+with REST APIs or web services over the HTTP protocol.
 
 It supports all HTTP methods such as GET, POST, PUT, DELETE, PATCH etc
+
+Get : Get the data of employee, customer, in json format 
+Post: to store the data of employee, customer, etc. 
+Put/Patch : it is use to update the data 
+Delete : to delete the data. 
+
+Promise 
+fetch 
+axios ---> react js 
+Observable --> angular 
+
 
 Simple Definition
 
