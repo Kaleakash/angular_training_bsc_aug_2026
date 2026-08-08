@@ -480,6 +480,10 @@ http://localhost:3000/employees
 
 Create Angular Files
 
+create new angular project 
+
+ng new angular-employee-rest-api 
+
 Generate component
 
 ng g c employee
